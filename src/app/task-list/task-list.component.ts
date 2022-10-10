@@ -15,13 +15,7 @@ export class TaskListComponent implements OnInit {
     console.log(date);
   }
 
-  tasks: Task[] = [
-    new Task ("Visit Ann"),
-    new Task ("Call dad"),
-    new Task ("Go to the gym"),
-    new Task ("Wash the dishes"),
-    new Task ("Shop for the party")
-  ];
+  tasks: Task[] = [];
 
   add(newTask: string){
     this.tasks.push(new Task(newTask));
